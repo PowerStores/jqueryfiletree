@@ -35,6 +35,7 @@ do($ = window.jQuery, window) ->
                 onlyFolders: false
                 onlyFiles: false
                 preventLinkAction: false
+                params: {}
             }
             @jqft = {
                 container: $el # initiator element
@@ -135,6 +136,7 @@ do($ = window.jQuery, window) ->
                 onlyFolders: options.onlyFolders
                 onlyFiles: options.onlyFiles
                 multiSelect: options.multiSelect
+                params: options.params
 
             handleResult = (result) ->
                 $el.find('.start').html('')

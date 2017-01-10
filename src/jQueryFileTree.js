@@ -36,7 +36,8 @@ var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); 
         multiSelect: false,
         onlyFolders: false,
         onlyFiles: false,
-        preventLinkAction: false
+        preventLinkAction: false,
+        params: {}
       };
       this.jqft = {
         container: $el
@@ -127,7 +128,8 @@ var bind = function(fn, me){ return function(){ return fn.apply(me, arguments); 
         dir: dir,
         onlyFolders: options.onlyFolders,
         onlyFiles: options.onlyFiles,
-        multiSelect: options.multiSelect
+        multiSelect: options.multiSelect,
+        params: options.params
       };
       handleResult = function(result) {
         var li;
